@@ -39,6 +39,7 @@ A web application that allows users to track prices of Flipkart products by shar
     "web-vitals": "^2.1.4"
   }
 }
+```json
 
 
 Backend Libraries

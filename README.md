@@ -1,4 +1,3 @@
-﻿
 # Flipkart Price Tracker
 
 A web application that allows users to track prices of Flipkart products by sharing product links. The application automatically fetches product details like title, description, price, reviews, and total purchases. Users can check the price history of products and recheck them to update their pricing history.
@@ -19,39 +18,76 @@ A web application that allows users to track prices of Flipkart products by shar
 - **Libraries**: 
   - `react-chartjs-2`: Used for displaying price history charts.
   - `axios`: Used for making API requests to fetch product data.
-  
-## Frontend Libraries
 
-```json
-{
-  "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.7",
-    "chart.js": "^4.4.5",
-    "react": "^18.3.1",
-    "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  }
-}
-```json
+## Prerequisites
+
+- Node.js (v16 or later)
+- MongoDB (for the database)
+- Git (for cloning the repository)
+
+## Getting Started
+
+Follow these steps to set up the Flipkart Price Tracker application:
+
+### 1. Clone the Repository
+
+Open your terminal and run the following command to clone the repository:
+
+- git clone https://github.com/yourusername/flipkart-price-tracker.git
+- cd flipkart-price-tracker
+
+### 2. Backend Setup
+Navigate to the Backend Directory
+Change to the backend directory:
+- cd backend
+
+Install Backend Dependencies
+Install the required backend dependencies:
+
+-npm install
 
 
-Backend Libraries
-{
-  "dependencies": {
-    "express": "^4.x.x",
-    "mongoose": "^7.x.x",
-    "axios": "^1.7.7"
-  }
-}
-Prerequisites
-Node.js (v16 or later)
-MongoDB (for database)
-Getting Started
-Clone the repository
+Set Up Environment Variables
+Create a .env file in the backend directory and add your MongoDB connection string and the desired port:
+- MONGO_URI=your_mongodb_connection_string
+- PORT=5000
+
+ Start the Backend Server
+Run the following command to start the backend server:
+-npm run server
+
+The backend server will start at http://localhost:5000.
+
+###3. Frontend Setup
+Navigate to the Frontend Directory
+Change to the frontend directory:
+- cd frontend
+
+ Start the Frontend Development Server
+Run the following command to start the frontend development server:
+-npm start
+
+The frontend will be available at http://localhost:3000.
+
+###4. Proxy Setup
+The frontend has a proxy configured in the package.json file to forward API requests to the backend. Ensure the following line is present:
+- "proxy": "http://localhost:5000"
+
+
+###Usage
+On the home page, users can enter a Flipkart product link.
+The product details, including title, price, and reviews, are automatically fetched and displayed.
+Users can click to check the price history of the product, visualized as a chart.
+Each time the user checks the product, the current price is saved, allowing users to track price changes over time.
+###Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+###License
+This project is licensed under the MIT License - see the LICENSE file for details.
+-
+You can replace `Mr-Bhagatwala` in the clone URL with your actual GitHub username. Feel free to modify any sections to fit your needs better!
+
+
+
+
+

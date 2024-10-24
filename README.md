@@ -58,7 +58,7 @@ Run the following command to start the backend server:
 
 The backend server will start at http://localhost:5000.
 
-###3. Frontend Setup
+### 3. Frontend Setup
 Navigate to the Frontend Directory
 Change to the frontend directory:
 - cd frontend
@@ -69,7 +69,7 @@ Run the following command to start the frontend development server:
 
 The frontend will be available at http://localhost:3000.
 
-###4. Proxy Setup
+### 4. Proxy Setup
 The frontend has a proxy configured in the package.json file to forward API requests to the backend. Ensure the following line is present:
 - "proxy": "http://localhost:5000"
 
